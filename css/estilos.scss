@@ -1,0 +1,123 @@
+//importo los colores principales
+@import 'variables';
+
+//Fondo de pantalla (del body)
+.fondo-de-pantalla {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #383737;
+}
+
+/* DEFINICION DE UNA CLASE BASE */
+.tipo-tarjeta {
+background-color: #ffffff;
+border-radius: 5px; //para redondear los bordes
+padding: 15px;
+}
+
+.tarjeta-perfume { //LLAVE del .tarjeta-perfume
+
+    .h2 { 
+        margin: auto; //para centrar el titulo;
+    }
+
+@extend .tipo-tarjeta;
+display: flex; //para que  esten una al lado de la otra
+align-items: center;
+gap: 20px; //para espacio entre foto e texto
+
+.img-perfume {
+    width: 30%;
+    max-width: 100%; /* Candado de seguridad */
+    max-height: 250px; /* Límite real para que no explote Godzilla */
+    object-fit: contain; 
+    margin-bottom: 0;
+}
+
+.informacion-perfume { //LLAVE DEL .informacion-perfume
+    width: 70%;
+    text-align: left; 
+
+    .nombre-perfume {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    .marca-perfume {
+        font-size: 1rem;
+        color: gray;
+        text-transform: uppercase; //para que se note mas la marca
+        margin-bottom: 40px;
+    }
+
+    .genero-perfume {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: #666666;
+    }
+
+    .cantidad-perfume {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #666666;
+    }
+
+    .precio-perfume {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #ffcc00; /* Tu color dorado para resaltar la venta */
+        margin-bottom: 0;
+    }
+} //LLAVE DEL .informacion-perfume
+} //LLAVE DEL .tarjeta-perfume
+
+
+//Seccion de "sobre nosotros" al final de los 6 perfumes, para que se note separado
+.nosotros-info {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px; //para separar el texto de los bordes
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+// DEFINICION CO  MIXIN
+@mixin crear-boton($color-de-fondo, $color-de-texto) {
+    background-color: $color-de-fondo;
+    color: $color-de-texto;
+    margin: 15px; //para el espacio entre los 3 menu
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block; //para que los botones no se me hagan gigantes
+    border-radius: 6px;
+    font-weight: bold; //negrita
+}
+//USO DEL MIXIN
+.boton-primero {
+    @include crear-boton($color-principal-st, $color-secundario-st)
+}
+
+
+
+// Utilizo bucles (o nesting) para las redes sociales osea el footer
+$colores-redes: (
+"instagram": #E1306C,
+"facebook": #1877F2
+);
+
+@each $nombre-red, $color-marca in $colores-redes {
+.boton-#{$nombre-red} {
+@include crear-boton($color-marca, #ffffff);
+}
+}
+
+
+
+// Para el mapa de google maps, para que se adapte a cualquier pantalla
+.mapa-de-google {
+    width: 100%;
+    height: auto;
+    border: 0; //para quitar el borde
+}

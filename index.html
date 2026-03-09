@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body class="fondo-de-pantalla">
 
 
     <header class="py-10%">
@@ -32,9 +32,9 @@
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav text-center">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/catalogo.html">Catalogo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">contacto</a></li>
+                        <li class="nav-item"><a class="boton-primero" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="boton-primero" href="pages/catalogo.html">Catalogo</a></li>
+                        <li class="nav-item"><a class="boton-primero" href="pages/contacto.html">contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,55 +47,91 @@
         <!-- que se vean tipo FILAS (row) una lado del otro, a mi gusto en desktop es mas cómodo que se vean asi. Además de dejarnos libertad de agregarle información a los productos en caso que el usuario muestre interés en él -->
         <div class="row">
             <div class="col-md-6 mb-4">
-                <section class="border p-1">
+                <section class="tarjeta-perfume">
                 <h2>Perfume 1</h2>
-                <img src="./img/9amDive.avif" class="img-fluid" alt="Afnan 9 AM Dive, Masculino, 100ml, 95000">
-                <p>9 AM Dive | Afnan | Masculino | 100 ml. | 95.000 </p>
+                <img src="./img/9amDive.avif" class="img-perfume" alt="Afnan 9 AM Dive, Masculino, 100ml, $95000">
+                    <div class="informacion-perfume">
+                        <h3 class="nombre-perfume"> 9 AM DIVE</h3>
+                        <p class="marca-perfume">Afnan</p>
+                        <p class="genero-perfume">Masculino</p>
+                        <p class="cantidad-perfume">100 ml.</p>
+                        <p class="precio-perfume">95.000</p>  
+                    </div>
                 </section>
             </div>
         
 
         <div class="col-md-6 mb-4">
-            <section class="border p-1">
+            <section class="tarjeta-perfume">
             <h2>perfume 2</h2>
-            <img src="./img/OdysseyLimoni.avif" class="img-fluid" alt="Armaf Odyssey Limoni Fresh, Unisex, 100ml, 98500">
-            <p> Odyssey Limoni Fresh | Armaf | Unisex | 100 ml | 98.500 </p>
+            <img src="./img/OdysseyLimoni.avif" class="img-perfume" alt="Armaf Odyssey Limoni Fresh, Unisex, 100ml, $98500">
+            <div class="informacion-perfume">
+                <h3 class="nombre-perfume">Odyssey Limoni Fresh</h3>
+                <p class="marca-perfume">Armaf</p>
+                <p class="genero-perfume">Unisex</p>
+                <p class="cantidad-perfume">100 ml.</p>
+                <p class="precio-perfume">98.500</p>
+            </div>
         </section>
         </div>
 
 <div class="col-md-6 mb-4">   
-        <section class="border p-1">
+        <section class="tarjeta-perfume">
             <h2>perfume 3</h2>
-            <img src="./img/Fakhar Rose.avif" class="img-fluid" alt="Lattafa Fakhar Rose, Femenino, 100ml, 85000">
-            <p> Fakhar Rose | Lattafa | Femenino | 100 ml | 85.000 </p>
+            <img src="./img/Fakhar Rose.avif" class="img-perfume" alt="Lattafa Fakhar Rose, Femenino, 100ml, $85000">
+            <div class="informacion-perfume">
+                <h3 class="nombre-perfume">Fakhar Rose</h3>
+                <p class="marca-perfume">Lattafa</p>
+                <p class="genero-perfume">Femenino</p>
+                <p class="cantidad-perfume">100 ml.</p>
+                <p class="precio-perfume">85.000</p>
+            </div>
         </section>
 </div>
 
 <div class="col-md-6 mb-4">
-        <section class="border p-1">
+        <section class="tarjeta-perfume">
             <h2>perfume 4</h2>
-            <img src="./img/MayarCherryIntense.avif" class="img-fluid" alt="Lattafa Mayar Cherry Intense, Femenino, 100ml, 85000">
-            <p> Mayar Cherry Intense | Lattafa | Femenino | 100 ml | 85.000 </p>
+            <img src="./img/MayarCherryIntense.avif" class="img-perfume" alt="Lattafa Mayar Cherry Intense, Femenino, 100ml, $85000">
+            <div class="informacion-perfume">
+                <h3 class="nombre-perfume">Mayar Cherry Intense</h3>
+                <p class="marca-perfume">Lattafa</p>
+                <p class="genero-perfume">Femenino</p>
+                <p class="cantidad-perfume">100 ml.</p>
+                <p class="precio-perfume">85.000</p>
+            </div>
         </section>
 </div>
 
 <div class="col-md-6 mb-4">
-        <section class="border p-1">
+        <section class="tarjeta-perfume">
             <h2>perfume 5</h2>
-            <img src="./img/AsadBourbon.avif" class="img-fluid" alt="Lattafa Asad Bourbon, Masculino, 100ml, 98500">
-            <p> Asad Bourbon | Lattafa | Masculino | 100 ml | 98.500 </p>
+            <img src="./img/AsadBourbon.avif" class="img-perfume" alt="Lattafa Asad Bourbon, Masculino, 100ml, $98500">
+            <div class="informacion-perfume">
+                <h3 class="nombre-perfume">Asad Bourbon</h3>
+                <p class="marca-perfume">Lattafa</p>
+                <p class="genero-perfume">Masculino</p>
+                <p class="cantidad-perfume">100 ml.</p>
+                <p class="precio-perfume">98.500</p>
+            </div>
         </section>
 </div>
 
 <div class="col-md-6 mb-4">
-        <section class="border p-1">
+        <section class="tarjeta-perfume">
             <h2>perfume 6</h2>
-            <img src="./img/PistachioKunafa.avif" class="img-fluid" alt="Anfar Pistachio, Unisex, 100ml, 98000">
-            <p> Pistachio | Anfar | Unisex | 100 ml | 98.000 </p>
+            <img src="./img/PistachioKunafa.avif" class="img-perfume" alt="Anfar Pistachio, Unisex, 100ml, $98000">
+            <div class="informacion-perfume">
+                <h3 class="nombre-perfume">Pistachio</h3>
+                <p class="marca-perfume">Anfar</p>
+                <p class="genero-perfume">Unisex</p>
+                <p class="cantidad-perfume">100 ml.</p>
+                <p class="precio-perfume">98.000</p>
+            </div>
         </section>
 </div>
 
-        <h1 class="text-center mb-4"></h1>
+        <h2 class="text-center mb-4">🢃 MÁS SOBRE NOSOTROS 🢃</h2>
         
         <!-- Para darle "más informacion" al usuario -->
         <section>
@@ -109,8 +145,8 @@
     <footer class="text-center bg-dark text-light">
         <p>©️Todos los derechos reservados</p>
         <!-- Formas de contacto -->
-        <a href="https://www.instagram.com/st.perfumeria_/">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61570483660479">Facebook</a>
+        <a href="https://www.instagram.com/st.perfumeria_/" class="boton-instagram">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61570483660479" class="boton-facebook">Facebook</a>
     </footer>
 
     
